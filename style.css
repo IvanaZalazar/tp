@@ -1,0 +1,135 @@
+body {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+h1 {
+  color: darkcyan;
+  text-align: center;
+}
+
+.caja {
+  width: 50%;
+  height: 300px;
+  padding: 12px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  position: relative;
+  left: 25%;
+
+
+}
+
+.contenedorFormulario {
+  display: flex;
+  justify-content: space-between;
+}
+
+#longitud {
+  text-align: center;
+  color: darkcyan;
+  font-size: large;
+}
+#reglas {
+  text-align: center;
+  color: darkcyan;
+  font-size: large;
+}
+#caracteres {
+  text-align: center;
+  color: darkcyan;
+  font-size: large;
+}
+
+
+#longitudFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#reglasFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#caracteresFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.inputContenedor{
+  display: flex;
+  align-items: baseline;
+}
+
+label{
+  text-align: justify;
+}
+
+i{
+  background-color:  rgb(195, 167, 221);
+  color:blueviolet;
+  font-size: large;
+  padding: 5px;
+border-radius: 5px;
+}
+
+button{
+  border-style: none;
+}
+.contenedorCampoContrasenia{
+  display: flex;
+  justify-content: center;
+}
+.contenedorCampoContrasenia p{
+  background-color:  rgb(195, 167, 221);
+  border-radius: 5px;
+  width: 40%;
+}
+
+#campoContrasenia{
+  border-style: solid;
+  width: 40%;
+  height: 85%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .contenedorFormulario {
+    flex-direction: column ;
+  }
+  .caja{
+    height: 700px;
+  }
+  .contenedorCampoContrasenia p{
+    width: 30%;
+    height: 85%;
+  }
+  i{
+    font-size: small;
+    padding: 2px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .contenedorFormulario {
+    flex-direction: column ;
+  }
+
+.caja{
+  height: 500px;
+}
+.contenedorCampoContrasenia p{
+  width: 40%;
+  height: 85%;
+}
+i{
+  font-size: small;
+  padding: 2px;
+}
+}
+
